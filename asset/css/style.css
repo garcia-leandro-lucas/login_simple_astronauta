@@ -1,0 +1,200 @@
+:root {
+  --roboto: 'Roboto', sans-serif;
+  --roboto-condensed: "Roboto Condensed", sans-serif ;
+  --white: #ffffff;
+  --black: #000000;
+  --yellow: #fdd924;
+}
+
+body{
+  background-image: url(../images/background_galaxy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section {
+    background-color: #0000009c;
+    width: auto;
+    border-radius: 4px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.imagen_logo img {
+    width: 10%;
+}
+
+.container.div-content{
+  font-family: var(--roboto-condensed);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container.div-content h1{
+  color: #fdd924;
+}
+
+.container.div-content h2{
+  color: #fdd924;
+}
+
+.container.div-content a {
+    color: #fdd924 !important;
+    text-decoration: none;
+}
+
+.container.div-content a:hover {
+    color: #cca92d !important;
+    transition: all 0.3s;
+}
+
+.imagen_logo img:hover {
+    transform: rotate(30deg);
+    transition: all 1s;
+}
+
+.container.div-content p {
+    color: #fdd924 !important;
+}
+
+.div-content h1{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+form {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+input {
+    border-bottom: 1px solid #ffffff !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    background-color:rgba(0,0,0,0) !important;
+    color: var(--white) !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: 0 0 0px 1000px unset;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+form .input_email {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+form .input_contrasenia {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+form button{
+  margin-bottom: 30px;
+}
+
+.opcion_de_registro span{
+  color: #ffffff;
+}
+
+form .d-grid.gap-2.col-6.mx-auto button {
+    background-color: var(--yellow);
+    border: 1px solid #fdd924;
+}
+
+form .d-grid.gap-2.col-6.mx-auto button:hover{
+  background-color: var(--white);
+  border-outline: 1px solid #fdd924;
+  color:#fdd924;
+  transition: all 0.5s;
+}
+
+form .btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgb(253 217 35 / 30%) !important;
+}
+
+form .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(253 217 35 / 30%) !important;
+}
+
+form label.form-label {
+    color: #ffffff;
+}
+
+.mensaje_de_envio_exitoso, .mensaje_de_envio_error {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    background-color: #ffffff50;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.mensaje_de_envio p {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.mensaje_de_envio_exitoso i {
+    font-size: 30px;
+    color: green;
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.mensaje_de_envio_error i {
+    font-size: 30px;
+    color: red;
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.mensaje_de_envio_exitoso, .mensaje_de_envio_error {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.message {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.imagen_ingreso img {
+    width: 30%;
+}
+
+.lista_de_validaciones {
+    text-align: left;
+    color: var(--yellow);
+}
+
+/* Media Query: Máximo 600px */
+@media (max-width: 600px){
+
+  body {
+      background-image: url(../images/background_galaxy.jpg);
+      background-repeat: no-repeat;
+      background-size: initial;
+      background-position-y: 65%;
+  }
+
+  .imagen_logo img {
+      width: 30%;
+  }
+
+  form {
+    width: 100%;
+}
+
+}
